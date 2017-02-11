@@ -9,7 +9,7 @@ class  AjouterRecette extends React.Component {
       image: this.image.value,
       ingredients: this.ingredients.value,
       instructions: this.instructions.value
-    }
+    };
     this.props.ajouterRecette(recette);
     this.recetteForm.reset();
   };
