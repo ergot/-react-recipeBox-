@@ -28,7 +28,7 @@ class Admin extends React.Component {
 
         </form>
 
-        <button onClick={() => this.props.supprimerRecette(key)} >Supprimer</button>
+        <button onClick={()=>this.props.supprimerRecette(key)}>supprimer</button>
 
       </div>
     )
@@ -55,7 +55,8 @@ class Admin extends React.Component {
     recettes: React.PropTypes.object.isRequired,
     chargerExemple: React.PropTypes.func.isRequired,
     ajouterRecette: React.PropTypes.func.isRequired,
-    majRecette: React.PropTypes.func.isRequired
+    majRecette: React.PropTypes.func.isRequired,
+    supprimerRecette: React.PropTypes.func.isRequired
   };
 
 }

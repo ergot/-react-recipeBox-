@@ -33,6 +33,12 @@ class App extends React.Component {
     this.setState({ recettes });
   };
 
+  surpprimerRecette = key => {
+    const recettes = {...this.state.recettes};
+    recettes[key] = null;
+    this.setState({recettes});
+  };
+
   majRecette = (key, majRecette) => {
     const recettes = {...this.state.recettes};
     recettes[key] = majRecette;
